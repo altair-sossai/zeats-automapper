@@ -19,18 +19,30 @@ dotnet add package Zeats.AutoMapper
 
 ## Extensions
 
-### enum.Description()
-Returns the description of the enum using the attribute System.ComponentModel.DescriptionAttribute
-```c#
-private enum SampleEnum
-{
-    Option01,
+### ForMember(destination, origin)
+This package aims to facilitate the writing of the mapping code, writing less.
 
-    [Description("Option 02")]
-    Option02
+See the following example:
+```c#
+private class Source
+{
+    public string Name { get; set; }
 }
 
-SampleEnum.Option01.Description() /* return "Option01" */
-SampleEnum.Option02.Description() /* return "Option 02" */
+public class Target
+{
+    public string CompanyName { get; set; }
+    public string Document { get; set; }
+}
+
+private class CustomProfile : Profile
+{
+    public CustomProfile()
+    {
+        CreateMap<Source, Target>()
+            .ForMember(t => t.CompanyName, s => s.Name)
+            .ForMember(t => t.Document, "fixed-value");
+    }
+}
 ```
 ---
