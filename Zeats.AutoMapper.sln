@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".devops", ".devops", "{ACBC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7E4920A9-D330-4625-8580-4880C586ED01}"
 	ProjectSection(SolutionItems) = preProject
-		README.md.txt = README.md.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
