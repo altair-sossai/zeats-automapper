@@ -8,7 +8,7 @@
 
 Extensions to facilitate AutoMapper use
 
-[![Build Status](https://dev.azure.com/zeats/Zeats/_apis/build/status/zeats-automapper?branchName=master)](https://dev.azure.com/zeats/Zeats/_build/latest?definitionId=448&branchName=master)
+[![Build Status](https://dev.azure.com/zeats/Zeats/_apis/build/status/zeats-automapper?branchName=master)](https://dev.azure.com/zeats/Zeats/_build/latest?definitionId=44&branchName=master)
 [![NuGet](https://img.shields.io/nuget/v/Zeats.AutoMapper.svg)](https://www.nuget.org/packages/Zeats.AutoMapper)
 
 ## Installation
